@@ -29,7 +29,9 @@ public class Solver{
 
     public String path(Maze m, int x, int anterior){
         int exit = m.getExitSpace();
+
         int start = m.getStartSpace();
+
         int a = x;
         String pos = "";
         int u;
@@ -141,6 +143,8 @@ public class Solver{
         String[] sol = s.solve(mapa);
         int start = mapa.getStartSpace();
         int exit = mapa.getExitSpace();
+        System.out.println("Punto de Inicio: "+ start);
+        System.out.println("Punto de Salida: " + exit);
         System.out.println("Movimientos maximos: "+mapa.getMaxMoves());
 
 
